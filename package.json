@@ -1,0 +1,27 @@
+{
+  "name": "integrationtests",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest",
+    "build": "npx tsc -b && cp -R src/generated dist/generated",
+    "start": "npx tsc -b && node dist/bin.js ",
+    "integration": "./scripts/run-integration.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@prisma/client": "^6.11.1",
+    "@types/express": "^5.0.3",
+    "express": "^5.1.0",
+    "prisma": "^6.11.1",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  },
+  "devDependencies": {
+    "@types/supertest": "^6.0.3",
+    "supertest": "^7.1.3"
+  }
+}
